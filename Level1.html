@@ -10,17 +10,17 @@
       }
     </style>
     <script>
-      function postscript(){
-        target = document.getElementById("task");
-        target.
+      function postscript() {
+        document.getElementById("msg").innerHTML =
+          document.getElementById("task").value;
       }
     </script>
   </head>
   <body>
     <h2>ToDoList</h2>
     <p>
-      <input id="task" />
-      <button onclick="postscript()">追記</button>
+      <input type="text" id="task" />
+      <button type="button" onclick="postscript()">追記</button>
     </p>
     <p id="msg"></p>
   </body>
